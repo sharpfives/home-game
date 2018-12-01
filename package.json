@@ -1,0 +1,22 @@
+{
+  "name": "home-game",
+  "version": "1.0.0",
+  "description": "HOME is an open source browser-based game made for GitHubGameOff 2018 (https://itch.io/jam/game-off-2018) game jam hosted on itch.io. It was written using the PhaserJS game engine.",
+  "main": "home-game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharpfives/home-game.git"
+  },
+  "author": "Alex H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharpfives/home-game/issues"
+  },
+  "homepage": "https://github.com/sharpfives/home-game#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
