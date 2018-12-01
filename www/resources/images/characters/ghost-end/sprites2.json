@@ -1,0 +1,65 @@
+{
+  "layers" : [
+    {
+      "name" : "background",
+      "animations" : {
+
+        "rest" : {
+          "frames" : ["rest/background_*.png"],
+          "fps" : 8,
+          "repeat" : true
+        },
+        "heart" : {
+          "frames" : ["heart/background_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "moon" : {
+          "frames" : ["moon/background_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "body",
+      "animations" : {
+        "rest" : {
+          "frames" : ["rest/body_*.png"],
+          "fps" : 8,
+          "repeat" : true
+        },
+        "heart" : {
+          "frames" : ["heart/body_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "moon" : {
+          "frames" : ["moon/body_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "face",
+      "animations" : {
+        "rest" : {
+          "frames" : ["rest/face_*.png"],
+          "fps" : 8,
+          "repeat" : true
+        },
+        "heart" : {
+          "frames" : ["heart/face_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "moon" : {
+          "frames" : ["moon/face_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        }
+      }
+    }
+  ]
+}

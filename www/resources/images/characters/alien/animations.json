@@ -1,0 +1,114 @@
+{
+	"layers": [
+		{
+			"name": "body",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/alien\/body.png",
+				"size": [20,20],
+				"frames": 106
+			},
+			"animations": {
+				"rest-wheel": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 10
+				},
+				"rest-walk": {
+					"frames": 1,
+					"repeat": 0,
+					"fps": 15
+				},
+				"walk": {
+					"frames": [2,3,4,5,6,7],
+					"repeat": 1,
+					"fps": 15
+				},
+				"wheel": {
+					"frames": [8,9,10,11,12,13,14,15],
+					"repeat": 1,
+					"fps": 18
+				},
+				"fall": {
+					"frames": [16,17,18,19],
+					"repeat": 1,
+					"fps": 15
+				},
+				"to-moon-start": {
+					"frames": [20,21,22,23,24,25,26,27,28,29,30],
+					"repeat": 0,
+					"fps": 15
+				},
+				"to-moon-end": {
+					"frames": [31,32,33,34,35],
+					"repeat": 0,
+					"fps": 15
+				},
+				"wheel-jump-start": {
+					"frames": [36,37,38],
+					"repeat": 0,
+					"fps": 15
+				},
+				"wheel-jump-end": {
+					"frames": [39,40],
+					"repeat": 0,
+					"fps": 15
+				},
+				"drill-start": {
+					"frames": 41,
+					"repeat": 0,
+					"fps": 12
+				},
+				"drill-end": {
+					"frames": 42,
+					"repeat": 0,
+					"fps": 12
+				},
+				"drill": {
+					"frames": [43,44,45],
+					"repeat": 1,
+					"fps": 12
+				},
+				"rocket-start": {
+					"frames": [46,47,48,49,50,51],
+					"repeat": 0,
+					"fps": 12
+				},
+				"rocket-end": {
+					"frames": [52,53],
+					"repeat": 0,
+					"fps": 12
+				},
+				"flat": {
+					"frames": 54,
+					"repeat": 0,
+					"fps": 12
+				},
+				"rise": {
+					"frames": [55,56,57,58,59,60,61],
+					"repeat": 0,
+					"fps": 12
+				},
+				"shake-head": {
+					"frames": [62,63,64,65,66,67,68,69,70],
+					"repeat": 0,
+					"fps": 12
+				},
+				"get-wheel": {
+					"frames": [71,72,73,74,75,76,77,78,79,80],
+					"repeat": 0,
+					"fps": 15
+				},
+				"dash": {
+					"frames": [81,82,83,84,85,86],
+					"repeat": 0,
+					"fps": 15
+				},
+				"cry": {
+					"frames": [87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105],
+					"repeat": 0,
+					"fps": 15
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "layers" : [
+    {
+      "name" : "body",
+      "animations" : {
+        "snap" : {
+          "frames" : ["snap/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "rest" : {
+          "frames" : ["snap/body_01.png"],
+          "fps" : 15,
+          "repeat" : false
+        }
+      }
+    }
+  ]
+}

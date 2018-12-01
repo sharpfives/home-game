@@ -1,0 +1,108 @@
+{
+  "name" : "First Scene",
+  "physicsFile" : "resources/config/first-scene/physics.json",
+  "background" : {
+    "rootDir" : "resources/images/scenes/first-scene-large",
+    "layers" : [
+      {
+        "label" : "parallax",
+        "imagePath" : "parallax_1.png",
+        "parallax" : 1
+      },
+      {
+        "label" : "background-items-far",
+        "imagePath" : "background-items-far_1.png"
+      },
+      {
+        "label" : "background-items-close_1",
+        "imagePath" : "background-items-close_1.png",
+        "type" : "platform"
+      },
+      {
+        "label" : "background-scaffolding_1",
+        "imagePath" : "background-scaffolding_1.png"
+      },
+      {
+        "label" : "ground_1",
+        "imagePath" : "ground_1.png",
+        "type" : "ground"
+      },
+      {
+        "label" : "foreground-items_1",
+        "imagePath" : "foreground-items_1.png",
+        "type" : "platform"
+      },
+      {
+        "label" : "diggable_1",
+        "imagePath" : "diggable-area_1.png",
+        "type" : "breakable"
+      }
+    ]
+  },
+  "exits" : {
+    "pit-left" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [887, 130]
+    },
+    "fall-in" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [419, 0]
+    },
+    "middle" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [419, 230]
+    },
+    "cave" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [419, 230]
+    },
+    "rocket-temp" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [741, 160]
+    },
+    "right" : {
+      "type" : "right",
+      "width" : 20,
+      "character" : [10, 100]
+    },
+    "ocean" : {
+      "type" : "left",
+      "width" : 0,
+      "character" : [180, 220]
+    },
+    "end" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [741, 160]
+    }
+  }
+}

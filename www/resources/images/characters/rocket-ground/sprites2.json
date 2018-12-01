@@ -1,0 +1,221 @@
+{
+  "layers" : [
+    {
+      "name" : "right-wing",
+      "animations" : {
+        "broken" : {
+          "frames" : ["fix/right-wing_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["fix/right-wing_*.png"],
+          "fps" : 5,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : ["fix/right-wing_5.png"],
+          "fps" : 5,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "left-wing",
+      "animations" : {
+        "broken" : {
+          "frames" : ["fix/left-wing_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["fix/left-wing_*.png"],
+          "fps" : 5,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : ["fix/left-wing_5.png"],
+          "fps" : 5,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "bottom",
+      "animations" : {
+        "broken" : {
+          "frames" : ["fix/bottom_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["fix/bottom_*.png"],
+          "fps" : 5,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : ["fix/bottom_5.png"],
+          "fps" : 5,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "top",
+      "animations" : {
+        "broken" : {
+          "frames" : ["fix/top_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["fix/top_*.png"],
+          "fps" : 5,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : ["fix/top_5.png"],
+          "fps" : 5,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "orb-holes",
+      "animations" : {
+        "broken" : {
+          "frames" : ["fix/orb-holes_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["fix/orb-holes_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : ["fix/orb-holes_1.png"],
+          "fps" : 1,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "inlay-right-wing",
+      "animations" : {
+        "broken" : {
+          "frames" : ["inlay-right-wing/inlay-right-wing_01.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["inlay-right-wing/inlay-right-wing_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : [
+            "inlay-right-wing/inlay-right-wing_28.png",
+            "inlay-right-wing/inlay-right-wing_29.png",
+            "inlay-right-wing/inlay-right-wing_30.png",
+            "inlay-right-wing/inlay-right-wing_31.png"
+          ],
+          "fps" : 15,
+          "repeat" : true
+        }
+      }
+    },
+    {
+      "name" : "inlay-left-wing",
+      "animations" : {
+        "broken" : {
+          "frames" : ["inlay-left-wing/inlay-left-wing_01.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["inlay-left-wing/inlay-left-wing_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : [
+            "inlay-left-wing/inlay-left-wing_30.png",
+            "inlay-left-wing/inlay-left-wing_31.png",
+            "inlay-left-wing/inlay-left-wing_32.png",
+            "inlay-left-wing/inlay-left-wing_33.png"
+          ],
+          "fps" : 15,
+          "repeat" : true
+        }
+      }
+    },
+    {
+      "name" : "inlay-bottom",
+      "animations" : {
+        "broken" : {
+          "frames" : ["inlay-bottom/inlay-bottom_01.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["inlay-bottom/inlay-bottom_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : [
+            "inlay-bottom/inlay-bottom_18.png",
+            "inlay-bottom/inlay-bottom_19.png",
+            "inlay-bottom/inlay-bottom_20.png",
+            "inlay-bottom/inlay-bottom_21.png"
+          ],
+          "fps" : 15,
+          "repeat" : true
+        }
+      }
+    },
+    {
+      "name" : "inlay-top",
+      "animations" : {
+        "broken" : {
+          "frames" : ["inlay-top/inlay-top_01.png"],
+          "fps" : 1,
+          "repeat" : false
+        },
+        "fix" : {
+          "frames" : ["inlay-top/inlay-top_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "fixed" : {
+          "frames" : [
+            "inlay-top/inlay-top_31.png",
+            "inlay-top/inlay-top_32.png",
+            "inlay-top/inlay-top_33.png",
+            "inlay-top/inlay-top_34.png"
+          ],
+          "fps" : 15,
+          "repeat" : true
+        }
+      }
+    },
+    {
+      "name" : "door",
+      "animations" : {
+        "open" : {
+          "frames" : [
+            "all/door_01.png",
+            "all/door_02.png",
+            "all/door_03.png",
+            "all/door_04.png",
+            "all/door_05.png",
+            "all/door_06.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        }
+      }
+    }
+  ]
+}

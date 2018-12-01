@@ -1,0 +1,51 @@
+{
+  "name" : "Cave Scene",
+  "physicsFile" : "resources/config/cave-scene/physics.json",
+  "background" : {
+    "rootDir" : "resources/images/scenes/cave-scene",
+    "layers" : [
+      {
+        "label" : "ground_1",
+        "imagePath" : "ground_1.png",
+        "type" : "ground",
+        "z" : 0
+      },
+      {
+        "label" : "bricks_1",
+        "imagePath" : "bricks_1.png",
+        "z" : 1
+      },
+      {
+        "label" : "platforms_1",
+        "imagePath" : "platforms_1.png",
+        "type" : "platform",
+        "z" : 2
+      },
+      {
+        "label" : "foreground_1",
+        "imagePath" : "foreground_1.png",
+        "z" : 10
+      }
+    ]
+  },
+  "exits" : {
+    "top" : {
+      "area" : {
+        "x" : 0,
+        "y" : -10,
+        "w" : 400,
+        "h" : 10
+      },
+      "character" : [184, 10]
+    },
+    "bottom" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [159, 370]
+    }
+  }
+}

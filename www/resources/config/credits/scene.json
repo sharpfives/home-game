@@ -1,0 +1,20 @@
+{
+  "name" : "Credits Scene",
+  "background" : {
+    "rootDir" : "resources/images/scenes/intro",
+    "layers" : [
+      
+    ]
+  },
+  "exits" : {
+    "end" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [-10, -10]
+    }
+  }
+}

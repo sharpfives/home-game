@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home</title>
+
+        <!-- external libs -->
+        <script src="src/lib/phaser.min.js"></script>
+        <script src="src/lib/event-emitter.js"></script>
+        <script src="src/lib/howler.min.js"></script>
+
+        <script src="src/globals.js"></script>
+
+        <script src="src/camera-controller.js"></script>
+
+        <script src="src/overlays/cloud.js"></script>
+        <script src="src/overlays/cloud-particle.js"></script>
+        <script src="src/overlays/expand-cloud-particle.js"></script>
+        <script src="src/overlays/shrink-cloud-particle.js"></script>
+        <script src="src/overlays/mushroom-cloud.js"></script>
+        <script src="src/overlays/comic-box.js"></script>
+        <script src="src/overlays/cloud-transition.js"></script>
+        <script src="src/overlays/rocket-flame.js"></script>
+        <script src="src/overlays/wheel.js"></script>
+        <script src="src/overlays/power-orb.js"></script>
+        <script src="src/overlays/grass-blade.js"></script>
+        <script src="src/overlays/grass-patch.js"></script>
+        <script src="src/overlays/smoke-stack-cloud.js"></script>
+        <script src="src/overlays/steam-vent-cloud.js"></script>
+        <script src="src/overlays/big-rock.js"></script>
+        <script src="src/overlays/ocean.js"></script>
+        <script src="src/overlays/light-beam.js"></script>
+        <script src="src/overlays/tower-arm.js"></script>
+        <script src="src/overlays/power-up-transition.js"></script>
+        <script src="src/overlays/simple-collision-area.js"></script>
+        <script src="src/overlays/rocket-landing-area.js"></script>
+        <script src="src/overlays/torch.js"></script>
+        <script src="src/overlays/light-bolts.js"></script>
+        <script src="src/overlays/church-tower.js"></script>
+        <script src="src/overlays/wide-screen.js"></script>
+        <script src="src/overlays/water-effect.js"></script>
+
+
+        <script src="src/characters/character.js"></script>
+        <script src="src/characters/layered-character.js"></script>
+        <script src="src/characters/simple-character.js"></script>
+        <script src="src/characters/square.js"></script>
+        <script src="src/characters/player.js"></script>
+        <script src="src/characters/ghost.js"></script>
+        <script src="src/characters/pit-claw.js"></script>
+        <script src="src/characters/ground-slime.js"></script>
+        <script src="src/characters/bird.js"></script>
+        <script src="src/characters/alien-comic.js"></script>
+        <script src="src/characters/ghost-comic.js"></script>
+
+        <script src="src/overlays/rocket-ground.js"></script>
+
+        <script src="src/scenes/preload-screen.js"></script>
+        <script src="src/scenes/scene-map.js"></script>
+        <script src="src/scenes/scene-base.js"></script>
+        <script src="src/scenes/intro.js"></script>
+        <script src="src/scenes/credits.js"></script>
+        <script src="src/scenes/first-scene.js"></script>
+        <script src="src/scenes/second-scene.js"></script>
+        <script src="src/scenes/crater-scene.js"></script>
+        <script src="src/scenes/cave-scene.js"></script>
+        <script src="src/scenes/last-scene.js"></script>
+        <script src="src/scenes/scene-factory.js"></script>
+        <script src="src/audio-manager.js"></script>
+
+        <script src="src/game-state.js"></script>
+        <script src="src/game-state-manager.js"></script>
+        <script src="src/input-handler.js"></script>
+
+        <script src="src/main-game.js"></script>
+
+    </head>
+    <style>
+    body {
+      -ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
+      image-rendering: -webkit-optimize-contrast; // Safari 6, UC Browser 9.9
+      image-rendering: -webkit-crisp-edges; // Safari 7+
+      image-rendering: -moz-crisp-edges; // Firefox 3.6+
+      image-rendering: -o-crisp-edges; // Opera 12
+      image-rendering: pixelated; // Chrome 41+ and Opera 26+
+    }
+    </style>
+    <body style="margin: 0px; padding: 0px;">
+      <div id="game-window" style="margin: 0px; width:640px; height:480px; padding:0px"></div>
+    </body>
+
+    <script type="text/javascript">
+      window.PhaserGlobal = { disableWebAudio: true };
+      window.onload = function() {
+
+        setUpVisibilityChange();
+
+        new MainGame();
+        // let convoFiles = [
+        //   'resources/conversations/key.json',
+        //   'resources/conversations/test.json'
+        // ];
+        // stateManager.loadConversations(convoFiles);
+      };
+
+      let setUpVisibilityChange = () => {
+        let hidden, visibilityChange;
+        if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support
+          hidden = "hidden";
+          visibilityChange = "visibilitychange";
+        } else if (typeof document.msHidden !== "undefined") {
+          hidden = "msHidden";
+          visibilityChange = "msvisibilitychange";
+        } else if (typeof document.webkitHidden !== "undefined") {
+          hidden = "webkitHidden";
+          visibilityChange = "webkitvisibilitychange";
+        }
+
+        let videoElement = document.getElementById("game-window");
+
+        // If the page is hidden, pause the video;
+        // if the page is shown, play the video
+        function handleVisibilityChange() {
+          if (document[hidden]) {
+            audioManager.pause();
+          } else {
+            audioManager.resume();
+          }
+        }
+        // Warn if the browser doesn't support addEventListener or the Page Visibility API
+        if (typeof document.addEventListener === "undefined" || typeof document.hidden === "undefined") {
+          console.log("This demo requires a browser, such as Google Chrome or Firefox, that supports the Page Visibility API.");
+        } else {
+          // Handle page visibility change
+          document.addEventListener(visibilityChange, handleVisibilityChange, false);
+        }
+      }
+    </script>
+  </html>

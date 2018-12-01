@@ -1,0 +1,128 @@
+{
+  "layers" : [
+    {
+      "name" : "body",
+      "animations" : {
+        "rest" : {
+          "frames" : ["disappear/body_01.png"],
+          "fps" : 10,
+          "repeat" : false
+        },
+        "disappear" : {
+          "frames" : ["disappear/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "appear" : {
+          "frames" : ["appear/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "shock-face" : {
+          "frames" : ["shock-face/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "dont-do-that" : {
+          "frames" : ["dont-do-that/body_*.png"],
+          "fps" : 13,
+          "repeat" : false
+        },
+        "kneel-in" : {
+          "frames" : [
+            "push-wheel/body_01.png",
+            "push-wheel/body_02.png",
+            "push-wheel/body_03.png",
+            "push-wheel/body_04.png",
+            "push-wheel/body_05.png",
+            "push-wheel/body_06.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "kneel-out" : {
+          "frames" : [
+            "push-wheel/body_01.png",
+            "push-wheel/body_02.png",
+            "push-wheel/body_03.png",
+            "push-wheel/body_04.png",
+            "push-wheel/body_05.png",
+            "push-wheel/body_06.png"
+          ],
+          "fps" : 15,
+          "repeat" : false,
+          "reverse" : true
+        },
+        "push-wheel" : {
+          "frames" : [
+            "push-wheel/body_07.png",
+            "push-wheel/body_08.png",
+            "push-wheel/body_09.png",
+            "push-wheel/body_10.png",
+            "push-wheel/body_11.png",
+            "push-wheel/body_12.png",
+            "push-wheel/body_13.png",
+            "push-wheel/body_14.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "concentrate" : {
+          "frames" : [
+            "concentrate/body_*.png"
+          ],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "dash" : {
+          "frames" : [
+            "dash/body_*.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "to-two-up-arrows" : {
+          "frames" : [
+            "to-two-up-arrows/body_*.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "to-up-down-arrows" : {
+          "frames" : [
+            "to-up-down-arrows/body_*.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "to-two-right-arrows" : {
+          "frames" : [
+            "to-two-right-arrows/body_*.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "to-up-arrow-start" : {
+          "frames" : [
+            "to-up-arrow/body_*.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "to-up-arrow-end" : {
+          "frames" : [
+            "to-up-arrow/body_14.png",
+            "to-up-arrow/body_13.png",
+            "to-up-arrow/body_12.png",
+            "to-up-arrow/body_11.png",
+            "to-up-arrow/body_10.png",
+            "to-up-arrow/body_09.png",
+            "to-up-arrow/body_01.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        }
+      }
+    }
+  ]
+}

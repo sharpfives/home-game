@@ -1,0 +1,36 @@
+{
+  "name" : "Ground Test",
+  "physicsFile" : "resources/config/ground-test/physics.json",
+  "background" : {
+    "rootDir" : "resources/images/scenes/ground-test",
+    "layers" : [
+      {
+        "label" : "ground_1",
+        "imagePath" : "ground_1.png"
+      },
+      {
+        "label" : "dirt",
+        "imagePath" : "dirt_1.png",
+        "type" : "breakable"
+      }
+    ]
+  },
+  "exits" : {
+    "middle" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : {
+        "coords" : {
+          "x" : 20,
+          "y" : 30
+        },
+        "enter" : [0, 0],
+        "exit" :  [0, 0]
+      }
+    }
+  }
+}

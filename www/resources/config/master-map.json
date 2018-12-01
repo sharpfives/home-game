@@ -1,0 +1,102 @@
+{
+  "sceneData" : {
+    "Credits Scene" : {
+      "type" : "credits",
+      "config" : "resources/config/credits/scene.json"
+    },
+    "Last Scene" : {
+      "type" : "last",
+      "config" : "resources/config/last-scene/scene.json"
+    },
+    "Cave Scene" : {
+      "type" : "cave",
+      "config" : "resources/config/cave-scene/scene.json"
+    },
+    "Crater Scene" : {
+      "type" : "crater",
+      "config" : "resources/config/crater-scene/scene.json"
+    },
+    "Second Scene" : {
+      "type" : "second",
+      "config" : "resources/config/second-scene/scene.json"
+    },
+    "First Scene" : {
+      "type" : "first",
+      "config" : "resources/config/first-scene/first-scene.json"
+    },
+    "Ocean Left" : {
+      "type" : "base",
+      "config" : "resources/config/ocean-left/scene.json"
+    },
+    "Intro" : {
+      "type" : "intro",
+      "config" : "resources/config/intro/scene.json"
+    },
+    "Ground Test" : {
+      "type" : "base",
+      "config" : "resources/config/ground-test/scene.json"
+    }
+  },
+  "connections" : [
+    {
+      "from" : {
+        "scene" : "Intro",
+        "exit" : "end"
+      },
+      "to" : {
+        "scene" : "First Scene",
+        "exit" : "fall-in"
+      }
+    },
+    {
+      "from" : {
+        "scene" : "Second Scene",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "First Scene",
+        "exit" : "right"
+      }
+    },
+    {
+      "from" : {
+        "scene" : "Second Scene",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Crater Scene",
+        "exit" : "left"
+      }
+    },
+    {
+      "from" : {
+        "scene" : "Last Scene",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "Crater Scene",
+        "exit" : "right"
+      }
+    },
+    {
+      "from" : {
+        "scene" : "Cave Scene",
+        "exit" : "top"
+      },
+      "to" : {
+        "scene" : "First Scene",
+        "exit" : "cave"
+      }
+    },
+    {
+      "from" : {
+        "scene" : "Credits Scene",
+        "exit" : "end"
+      },
+      "to" : {
+        "scene" : "First Scene",
+        "exit" : "end"
+      }
+    }
+  ]
+}

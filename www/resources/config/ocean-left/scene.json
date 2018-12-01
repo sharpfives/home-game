@@ -1,0 +1,55 @@
+{
+  "name" : "Ocean Left",
+  "physicsFile" : "resources/config/ocean-left/physics.json",
+  "background" : {
+    "rootDir" : "resources/images/scenes/ocean-left-scene",
+    "layers" : [
+      {
+        "label" : "background",
+        "imagePath" : "background_1.png"
+      },
+      {
+        "label" : "ground_1",
+        "imagePath" : "ground_1.png"
+      },
+      {
+        "label" : "water",
+        "imagePath" : "water_1.png"
+      }
+    ]
+  },
+  "exits" : {
+    "left" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 10,
+        "h" : 400
+      },
+      "character" : {
+        "coords" : {
+          "x" : 20,
+          "y" : 29
+        },
+        "enter" : [0, 0],
+        "exit" :  [0, 0]
+      }
+    },
+    "right" : {
+      "area" : {
+        "x" : 122,
+        "y" : 0,
+        "w" : 8,
+        "h" : 64
+      },
+      "character" : {
+        "coords" : {
+          "x" : 112,
+          "y" : 32
+        },
+        "enter" : [0, 0],
+        "exit" :  [0, 0]
+      }
+    }
+  }
+}

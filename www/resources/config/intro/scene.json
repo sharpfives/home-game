@@ -1,0 +1,27 @@
+{
+  "name" : "Intro",
+  "background" : {
+    "rootDir" : "resources/images/scenes/intro",
+    "layers" : [
+      {
+        "label" : "clouds",
+        "imagePath" : "clouds_1.png"
+      },
+      {
+        "label" : "moon",
+        "imagePath" : "moon_1.png"
+      }
+    ]
+  },
+  "exits" : {
+    "end" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [-10, -10]
+    }
+  }
+}

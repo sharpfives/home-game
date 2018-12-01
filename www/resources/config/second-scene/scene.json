@@ -1,0 +1,60 @@
+{
+  "name" : "Second Scene",
+  "physicsFile" : "resources/config/second-scene/physics.json",
+  "background" : {
+    "rootDir" : "resources/images/scenes/second-scene",
+    "layers" : [
+      {
+        "label" : "background-parallax",
+        "imagePath" : "background-parallax_1.png",
+        "parallax" : 1
+      },
+      {
+        "label" : "background-items-far",
+        "imagePath" : "background-items-far_1.png"
+      },
+      {
+        "label" : "background-items-close_1",
+        "imagePath" : "background-items-close_1.png",
+        "type" : "platform"
+      },
+      {
+        "label" : "ground_1",
+        "imagePath" : "ground_1.png",
+        "type" : "ground"
+      },
+      {
+        "label" : "foreground_1",
+        "imagePath" : "foreground_1.png",
+        "z" : 100
+      },
+      {
+        "label" : "diggable_1",
+        "imagePath" : "diggable-areas_1.png",
+        "type" : "breakable",
+        "z" : 105
+      }
+    ]
+  },
+  "exits" : {
+    "left" : {
+      "type" : "left",
+      "width" : 20,
+      "character" : [10, 200]
+    },
+    "right" : {
+      "type" : "right",
+      "width" : 20,
+      "character" : [10, 280]
+    },
+    "factory-temp" : {
+      "area" : {
+        "x" : 0,
+        "y" : 0,
+        "w" : 0,
+        "h" : 0
+      },
+      "character" : [370, 180]
+    }
+  }
+}

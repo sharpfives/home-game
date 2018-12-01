@@ -1,0 +1,185 @@
+{
+  "layers" : [
+
+    {
+      "name" : "background",
+      "animations" : {
+        "turn" : {
+          "frames" : ["turn/background_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "rest" : {
+          "frames" : ["rest/background_*.png"],
+          "fps" : 15,
+          "repeat" : true
+        },
+        "wave" : {
+          "frames" : ["wave/background_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "smile" : {
+          "frames" : ["smile/background_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "heart" : {
+          "frames" : ["heart/background_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "powerup-boost" : {
+          "frames" : [
+            "powerup/background_2.png",
+            "powerup/background_3.png",
+            "powerup/background_4.png",
+            "powerup/background_5.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        },
+        "powerup-drill" : {
+          "frames" : [
+            "powerup/background_2.png",
+            "powerup/background_3.png",
+            "powerup/background_4.png",
+            "powerup/background_6.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        },
+        "powerup-dash" : {
+          "frames" : [
+            "powerup/background_2.png",
+            "powerup/background_3.png",
+            "powerup/background_4.png",
+            "powerup/background_7.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "body",
+      "animations" : {
+        "turn" : {
+          "frames" : ["turn/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "rest" : {
+          "frames" : ["rest/body_*.png"],
+          "fps" : 15,
+          "repeat" : true
+        },
+        "wave" : {
+          "frames" : ["wave/body_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "smile" : {
+          "frames" : ["smile/body_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "heart" : {
+          "frames" : ["heart/body_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "powerup-boost" : {
+          "frames" : [
+            "powerup/body_2.png",
+            "powerup/body_3.png",
+            "powerup/body_4.png",
+            "powerup/body_5.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        },
+        "powerup-drill" : {
+          "frames" : [
+            "powerup/body_2.png",
+            "powerup/body_3.png",
+            "powerup/body_4.png",
+            "powerup/body_6.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        },
+        "powerup-dash" : {
+          "frames" : [
+            "powerup/body_2.png",
+            "powerup/body_3.png",
+            "powerup/body_4.png",
+            "powerup/body_7.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        }
+      }
+    },
+    {
+      "name" : "face",
+      "animations" : {
+        "turn" : {
+          "frames" : ["turn/face_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "rest" : {
+          "frames" : ["rest/face_*.png"],
+          "fps" : 15,
+          "repeat" : true
+        },
+        "wave" : {
+          "frames" : ["wave/face_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "smile" : {
+          "frames" : ["smile/face_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "heart" : {
+          "frames" : ["heart/face_*.png"],
+          "fps" : 14,
+          "repeat" : false
+        },
+        "powerup-boost" : {
+          "frames" : [
+            "powerup/face_2.png",
+            "powerup/face_3.png",
+            "powerup/face_4.png",
+            "powerup/face_5.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        },
+        "powerup-drill" : {
+          "frames" : [
+            "powerup/face_2.png",
+            "powerup/face_3.png",
+            "powerup/face_4.png",
+            "powerup/face_6.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        },
+        "powerup-dash" : {
+          "frames" : [
+            "powerup/face_2.png",
+            "powerup/face_3.png",
+            "powerup/face_4.png",
+            "powerup/face_7.png"
+          ],
+          "fps" : 0.8,
+          "repeat" : false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "layers" : [
+    {
+      "name" : "body",
+      "animations" : {
+        "rest-wheel" : {
+          "frames" : ["wheel/body_1.png"],
+          "fps" : 10,
+          "repeat" : false
+        },
+        "rest-walk" : {
+          "frames" : ["walk/body_3.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "walk" : {
+          "frames" : ["walk/body_*.png"],
+          "fps" : 15,
+          "repeat" : true
+        },
+        "wheel" : {
+          "frames" : ["wheel/body_*.png"],
+          "fps" : 18,
+          "repeat" : true
+        },
+        "fall" : {
+          "frames" : ["fall/body_*.png"],
+          "fps" : 15,
+          "repeat" : true
+        },
+        "to-moon-start" : {
+          "frames" : [
+            "to-moon/body_01.png",
+            "to-moon/body_02.png",
+            "to-moon/body_03.png",
+            "to-moon/body_04.png",
+            "to-moon/body_05.png",
+            "to-moon/body_06.png",
+            "to-moon/body_07.png",
+            "to-moon/body_08.png",
+            "to-moon/body_09.png",
+            "to-moon/body_10.png",
+            "to-moon/body_11.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "to-moon-end" : {
+          "frames" : [
+            "to-moon/body_12.png",
+            "to-moon/body_13.png",
+            "to-moon/body_14.png",
+            "to-moon/body_15.png",
+            "to-moon/body_16.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "wheel-jump-start" : {
+          "frames" : [
+            "wheel-jump/body_1.png",
+            "wheel-jump/body_2.png",
+            "wheel-jump/body_3.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "wheel-jump-end" : {
+          "frames" : [
+            "wheel-jump/body_4.png",
+            "wheel-jump/body_5.png"
+          ],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "drill-start" : {
+          "frames" : [
+            "drill/body_1.png"
+          ],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "drill-end" : {
+          "frames" : [
+            "drill/body_5.png"
+          ],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "drill" : {
+          "frames" : [
+            "drill/body_2.png",
+            "drill/body_3.png",
+            "drill/body_4.png"
+          ],
+          "fps" : 12,
+          "repeat" : true
+        },
+        "rocket-start" : {
+          "frames" : [
+            "rocket-2/body_1.png",
+            "rocket-2/body_2.png",
+            "rocket-2/body_3.png",
+            "rocket-2/body_4.png",
+            "rocket-2/body_5.png",
+            "rocket-2/body_6.png"
+          ],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "rocket-end" : {
+          "frames" : [
+            "rocket-2/body_7.png",
+            "rocket-2/body_8.png"
+          ],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "flat" : {
+          "frames" : ["rise/body_1.png"],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "rise" : {
+          "frames" : ["rise/body_*.png"],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "flat" : {
+          "frames" : ["rise/body_2.png"],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "shake-head" : {
+          "frames" : ["shake-head/body_*.png"],
+          "fps" : 12,
+          "repeat" : false
+        },
+        "get-wheel" : {
+          "frames" : ["get-wheel/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "dash" : {
+          "frames" : ["dash/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        },
+        "cry" : {
+          "frames" : ["cry/body_*.png"],
+          "fps" : 15,
+          "repeat" : false
+        }
+      }
+    }
+  ]
+}

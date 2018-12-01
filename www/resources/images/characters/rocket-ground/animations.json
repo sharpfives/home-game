@@ -1,0 +1,244 @@
+{
+	"layers": [
+		{
+			"name": "right-wing",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/right-wing.png",
+				"size": [69,127],
+				"frames": 7
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5],
+					"repeat": 0,
+					"fps": 5
+				},
+				"fixed": {
+					"frames": 6,
+					"repeat": 0,
+					"fps": 5
+				}
+			}
+		},
+		{
+			"name": "left-wing",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/left-wing.png",
+				"size": [69,127],
+				"frames": 7
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5],
+					"repeat": 0,
+					"fps": 5
+				},
+				"fixed": {
+					"frames": 6,
+					"repeat": 0,
+					"fps": 5
+				}
+			}
+		},
+		{
+			"name": "bottom",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/bottom.png",
+				"size": [69,127],
+				"frames": 7
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5],
+					"repeat": 0,
+					"fps": 5
+				},
+				"fixed": {
+					"frames": 6,
+					"repeat": 0,
+					"fps": 5
+				}
+			}
+		},
+		{
+			"name": "top",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/top.png",
+				"size": [69,127],
+				"frames": 7
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5],
+					"repeat": 0,
+					"fps": 5
+				},
+				"fixed": {
+					"frames": 6,
+					"repeat": 0,
+					"fps": 5
+				}
+			}
+		},
+		{
+			"name": "orb-holes",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/orb-holes.png",
+				"size": [69,127],
+				"frames": 3
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": 1,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fixed": {
+					"frames": 2,
+					"repeat": 0,
+					"fps": 1
+				}
+			}
+		},
+		{
+			"name": "inlay-right-wing",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/inlay-right-wing.png",
+				"size": [69,127],
+				"frames": 36
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
+					"repeat": 0,
+					"fps": 15
+				},
+				"fixed": {
+					"frames": [32,33,34,35],
+					"repeat": 1,
+					"fps": 15
+				}
+			}
+		},
+		{
+			"name": "inlay-left-wing",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/inlay-left-wing.png",
+				"size": [69,127],
+				"frames": 38
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+					"repeat": 0,
+					"fps": 15
+				},
+				"fixed": {
+					"frames": [34,35,36,37],
+					"repeat": 1,
+					"fps": 15
+				}
+			}
+		},
+		{
+			"name": "inlay-bottom",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/inlay-bottom.png",
+				"size": [69,127],
+				"frames": 26
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+					"repeat": 0,
+					"fps": 15
+				},
+				"fixed": {
+					"frames": [22,23,24,25],
+					"repeat": 1,
+					"fps": 15
+				}
+			}
+		},
+		{
+			"name": "inlay-top",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/inlay-top.png",
+				"size": [69,127],
+				"frames": 39
+			},
+			"animations": {
+				"broken": {
+					"frames": 0,
+					"repeat": 0,
+					"fps": 1
+				},
+				"fix": {
+					"frames": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
+					"repeat": 0,
+					"fps": 15
+				},
+				"fixed": {
+					"frames": [35,36,37,38],
+					"repeat": 1,
+					"fps": 15
+				}
+			}
+		},
+		{
+			"name": "door",
+			"spritesheet": {
+				"filename": "resources\/images\/characters\/rocket-ground\/door.png",
+				"size": [69,127],
+				"frames": 6
+			},
+			"animations": {
+				"open": {
+					"frames": [0,1,2,3,4,5],
+					"repeat": 0,
+					"fps": 15
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+  "name" : "Crater Scene",
+  "physicsFile" : "resources/config/crater-scene/physics.json",
+  "background" : {
+    "rootDir" : "resources/images/scenes/crater-scene",
+    "layers" : [
+      {
+        "label" : "background-parallax",
+        "imagePath" : "background-parallax_1.png",
+        "parallax" : 1
+      },
+      {
+        "label" : "background-light",
+        "imagePath" : "background-light_1.png"
+      },
+      {
+        "label" : "background-dark",
+        "imagePath" : "background-dark_1.png"
+      },
+      {
+        "label" : "ground_1",
+        "imagePath" : "ground_1.png",
+        "type" : "ground"
+      },
+      {
+        "label" : "diggable_1",
+        "imagePath" : "diggable-areas_1.png",
+        "type" : "breakable"
+      }
+    ]
+  },
+  "exits" : {
+    "left" : {
+      "type" : "left",
+      "width" : 20,
+      "character" : [10, 95]
+    },
+    "right" : {
+      "type" : "right",
+      "width" : 20,
+      "character" : [10, 25]
+    }
+  }
+}
