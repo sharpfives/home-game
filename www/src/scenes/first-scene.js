@@ -55,7 +55,7 @@ class FirstScene extends SceneBase {
       stateManager.set(STATE_DID_OCEAN_SCENE,true);
       stateManager.set(STATE_START_DID_FALL_IN, true);
       stateManager.set(STATE_DID_ROCKET_LAND, true);
-      stateManager.set(STATE_NUM_ORBS_IN_ROCKET,9);
+      stateManager.set(STATE_NUM_ORBS_IN_ROCKET,2);
       // stateManager.set(STATE_NUM_ORBS_FOLLOWING,1);
       stateManager.set(orbFollowing(9),true);
       // stateManager.set(orbFollowing(8),true);

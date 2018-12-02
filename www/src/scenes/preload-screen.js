@@ -76,7 +76,7 @@ class PreLoadScreenState extends Phaser.State {
       // sceneMap.loadScene('Second Scene','right');
       // sceneMap.loadScene('Second Scene','factory-temp');
       // sceneMap.loadScene('Crater Scene','left');
-      // sceneMap.loadScene('Last Scene','tower-temp');
+      // this.game.sceneMap.loadScene('Last Scene','tower-temp');
       // sceneMap.loadScene('Last Scene','left');
 
       // sceneMap.loadScene('Cave Scene','top');

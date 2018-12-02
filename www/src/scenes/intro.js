@@ -23,7 +23,7 @@ class IntroScene extends SceneBase {
     AlienComic.loadResources(this.game);
     RocketGround.loadResources(this.game);
     GhostComic.loadResources(this.game);
-    
+
     let loadingImage = this.add.sprite(0,0, 'loading-screen');
 
     this.load.setPreloadSprite(loadingImage);
@@ -36,6 +36,8 @@ class IntroScene extends SceneBase {
     super.create();
 
     this.loadingImage.destroy();
+
+    this.wideScreen.show();
 
     this.game.stage.disableVisibilityChange = true;
 
@@ -64,6 +66,7 @@ class IntroScene extends SceneBase {
     // rock.tint = 0xe7e7e7;
     this.game.physics.p2.enable(rock, false);
     this.game.physics.p2.gravity.y = 0;
+    this.spriteContainer.addChild(rock);
     this.rock = rock;
 
     let groundBarHeight = 20;
@@ -90,6 +93,7 @@ class IntroScene extends SceneBase {
 
     let start = async () => {
 
+      this.sortLayers();
       audioManager.play(AUDIO_PATH_INTRO,1,false);
       this.game.camera.view.x = 0;
       this.game.camera.view.y = 100;

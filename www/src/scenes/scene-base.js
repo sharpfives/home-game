@@ -451,6 +451,7 @@ class SceneBase extends Phaser.State {
     // this.sortLayers();
 
     this.wideScreen = new WideScreenOverlay(this.game);
+    this.spriteContainer.addChild(this.wideScreen.sprite);
 
     this.fadeIn(this.exitName);
   }
@@ -695,7 +696,8 @@ class SceneBase extends Phaser.State {
     }
 
     if (this.cursors.left.isDown) {
-      console.log(`x = ${x}, y = ${y}`);
+      if (DEBUG_SCENE)
+        console.log(`x = ${x}, y = ${y}`);
       // if (!this.isJumping && !this.isDashing)
       //   me.moveLeft(false);
       moveX = -0.01;

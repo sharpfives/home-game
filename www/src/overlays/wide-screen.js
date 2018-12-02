@@ -12,7 +12,7 @@ class WideScreenOverlay extends EventEmitter {
     s.fixedToCamera = true;
     s.setScaleMinMax(1, 1);
 
-    // s.z = 5000;
+    s.z = 5000;
     this.sprite = s;
 
     let colorVal = 101;

@@ -35,7 +35,8 @@
       {
         "label" : "diggable_1",
         "imagePath" : "diggable-area_1.png",
-        "type" : "breakable"
+        "type" : "breakable",
+        "z" : 400
       }
     ]
   },
