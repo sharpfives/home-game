@@ -30,7 +30,7 @@ class ExpandCloudParticle extends EventEmitter {
 
     let iter = 1;
 
-    let timer = setInterval( () => {
+    // let timer = setInterval( () => {
 
       s.x += vx;
       s.y += vy;
@@ -64,14 +64,23 @@ class ExpandCloudParticle extends EventEmitter {
       bmd.ctx.fill();
 
       bmd.dirty = true;
-      bmd.render();
+			bmd.render();
+			
+			(async () => {
+				const time = 1500;
+				await Promise.all( [
+					tweenPromise(game, this.sprite, {angle : 2*Math.PI, x : this.sprite.x + 20*vx, y : this.sprite.y + 20*vy}, time,0,Phaser.Easing.Linear.None),
+					tweenPromise(game, this.sprite.scale, {x : 10, y : 10}, time,0,Phaser.Easing.Linear.None)
+				]);
+				this.emit('done');
+			})();
 
-      iter++;
-      if (rsum/numPts >= size/2) {
-        clearInterval(timer);
-        this.emit('done');
-        return;
-      }
-    },100);
+    //   iter++;
+    //   if (rsum/numPts >= size/2) {
+    //     clearInterval(timer);
+    //     this.emit('done');
+    //     return;
+    //   }
+    // },100);
   }
 }

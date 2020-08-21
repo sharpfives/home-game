@@ -2,7 +2,8 @@
 
 class ShrinkCloudParticle extends EventEmitter {
   constructor(game,x,y,vx,vy,color,size,shrinkBy) {
-    super();
+		super();
+		this.game = game;
     this.shrinkBy = 2 * (typeof shrinkBy === 'undefined' ? Math.random()*2 : shrinkBy);
     color = (typeof color === 'undefined' ? 'rgb(255,255,255)' : color);
     size = (typeof size === 'undefined' ? 72 : size);
@@ -32,59 +33,68 @@ class ShrinkCloudParticle extends EventEmitter {
     this.bmd.ctx.fill();
   }
 
-  start() {
-    let r = this.width/2; let h = this.height;
-    let numPts = 20;
-    let radii = [];
-    for (let k = 0; k < numPts; k++) {
-      radii[k] = r;
-    }
+  async start() {
 
-    let iter = 1;
+		const time = rand(3000,4000);
+		const distX = this.vx * 50;
+		await Promise.all([
+			tweenPromise(this.game, this.sprite.scale, {x : 0, y : 0}, time, 0, Phaser.Easing.Linear.None),
+			tweenPromise(this.game, this.sprite, {x : this.sprite.x + distX}, time,0,Phaser.Easing.Linear.None)
+		]);
 
-    let timer = setInterval( () => {
+		this.emit('done');
+    // let r = this.width/2; let h = this.height;
+    // let numPts = 20;
+    // let radii = [];
+    // for (let k = 0; k < numPts; k++) {
+    //   radii[k] = r;
+    // }
 
-      this.sprite.x += this.vx;
-      this.sprite.y += this.vy;
+    // let iter = 1;
 
-      this.bmd.ctx.clearRect(0,0,this.width,this.height);
-      this.bmd.ctx.beginPath();
-      let rsum = 0;
-      for (let k = 0; k < numPts; k++) {
-        let shrinkBy = this.shrinkBy;
-        if (k > 1) {
-          radii[k] -= shrinkBy;
-          radii[k] = (radii[k] + radii[k-1] + radii[k-2])/3;
-        }
-        else if (k > 0) {
-          radii[k] -= shrinkBy;
-          radii[k] = (radii[k] + radii[k-1])/2;
-        }
-        else {
-          radii[k] -= shrinkBy;
-        }
-        radii[k] = Math.max(radii[k],0);
+    // let timer = setInterval( () => {
 
-        let angle = k * Math.PI * 2 / numPts;
-        let x = r + radii[k] * Math.cos(angle);
-        let y = r + radii[k] * Math.sin(angle);
+    //   this.sprite.x += this.vx;
+    //   this.sprite.y += this.vy;
 
-        this.bmd.ctx.lineTo(Math.round(x),Math.round(y));
+    //   this.bmd.ctx.clearRect(0,0,this.width,this.height);
+    //   this.bmd.ctx.beginPath();
+    //   let rsum = 0;
+    //   for (let k = 0; k < numPts; k++) {
+    //     let shrinkBy = this.shrinkBy;
+    //     if (k > 1) {
+    //       radii[k] -= shrinkBy;
+    //       radii[k] = (radii[k] + radii[k-1] + radii[k-2])/3;
+    //     }
+    //     else if (k > 0) {
+    //       radii[k] -= shrinkBy;
+    //       radii[k] = (radii[k] + radii[k-1])/2;
+    //     }
+    //     else {
+    //       radii[k] -= shrinkBy;
+    //     }
+    //     radii[k] = Math.max(radii[k],0);
 
-        rsum += radii[k];
-      }
-      this.bmd.ctx.fill();
+    //     let angle = k * Math.PI * 2 / numPts;
+    //     let x = r + radii[k] * Math.cos(angle);
+    //     let y = r + radii[k] * Math.sin(angle);
 
-      this.bmd.dirty = true;
-      this.bmd.render();
+    //     this.bmd.ctx.lineTo(Math.round(x),Math.round(y));
 
-      iter++;
-      if (rsum/numPts >= r) {
-        clearInterval(timer);
-        this.emit('done');
-        return;
-      }
-    },100);
+    //     rsum += radii[k];
+    //   }
+    //   this.bmd.ctx.fill();
+
+    //   this.bmd.dirty = true;
+    //   this.bmd.render();
+
+    //   iter++;
+    //   if (rsum/numPts >= r) {
+    //     clearInterval(timer);
+    //     this.emit('done');
+    //     return;
+    //   }
+    // },100);
 
   }
 }

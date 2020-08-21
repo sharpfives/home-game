@@ -30,7 +30,7 @@ class CloudParticle extends EventEmitter {
 
     let iter = 1;
 
-    let timer = setInterval( () => {
+    // let timer = setInterval( () => {
 
       s.x += vx;
       s.y += vy;
@@ -62,12 +62,20 @@ class CloudParticle extends EventEmitter {
       bmd.dirty = true;
       bmd.render();
 
-      iter++;
-      if (rsum == 0) {
-        clearInterval(timer);
-        this.emit('done');
-        return;
-      }
-    },100);
+			(async () => {
+				const time = 1500;
+				await Promise.all( [
+					tweenPromise(game, this.sprite, {angle : 2*Math.PI, x : this.sprite.x + 20*vx, y : this.sprite.y + 20*vy}, time,0,Phaser.Easing.Linear.None),
+					tweenPromise(game, this.sprite.scale, {x : 0, y : 0}, time,0,Phaser.Easing.Linear.None)
+				]);
+				this.emit('done');
+			})();
+      // iter++;
+      // if (rsum == 0) {
+      //   clearInterval(timer);
+      //   this.emit('done');
+      //   return;
+      // }
+    // },100);
   }
 }
